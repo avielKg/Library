@@ -1,0 +1,24 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+
+<h1 class="pushLeft">Show all loans from here</h1>
+
+<div class="pushLeft">
+    <table>
+        <tr>
+            <th>customer ID</th>
+            <th>book ID</th>
+            <th>loan Date</th>
+        </tr>
+        {%for loan in loans%}
+        <tr>
+            <td>{{loan[0]}}</td>
+            <td>{{loan[1]}}</td>
+            <td>{{loan[2]}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

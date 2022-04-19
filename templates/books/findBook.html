@@ -1,0 +1,24 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+
+<h1 class="pushLeft">You can find a book from here</h1>
+
+<div class="pushLeft">
+    <form action="/books/findBook" method="POST">
+        <label>Book Name:</label>
+        <br>
+        <input type="text" name="bookName" required autofocus>
+        <br><br>
+        <button type="submit">find book</button>
+    </form>
+
+    <h1>The book you want is: </h1>
+
+    {%for i in books%}
+    {{i}}
+    {%endfor%}
+</div>
+
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

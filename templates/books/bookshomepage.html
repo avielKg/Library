@@ -1,0 +1,17 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+<div class="indexNav">
+    <h1 class="pushLeft">Welcome to the Books section</h1>
+    <br><br>
+    <p class="pushLeft">Click Below to choose what you want to do :</p>  
+    <a class="pushLeft" href="/books/addBook">Add a book</a><br><br> 
+    <a class="pushLeft" href="/books/removeBook">Remove a book from the library</a><br><br>
+    <a class="pushLeft" href="/books/findBook">Find a certain book</a><br><br>
+    <a class="pushLeft" href="/books/showAllBooks">display all books</a><br><br>
+    
+    
+    
+</div>
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

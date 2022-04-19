@@ -1,0 +1,24 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+
+<h1 class="pushLeft">Find customers from here</h1>
+
+<div class="pushLeft">
+    <form action="/customers/findCustomer" method="POST">
+        <label>Customer name:</label>
+        <br>
+        <input type="text" name="name" required autofocus>
+        <br><br>
+        <button type="submit">Find the customer</button>
+    </form>
+</div>
+<br><br>
+<div class="pushLeft">
+    {%for i in cust%}
+    {{cust}}
+    {%endfor%}
+</div>
+
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

@@ -1,0 +1,62 @@
+/* Body CSS */
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(162, 235, 51)
+  }
+  
+  /* Navbar CSS */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  
+  .pushLeft{
+    margin-left: 30px;
+  }
+  
+  /* Table CSS */
+  table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+  
+  
+  td{
+    text-align: center;
+  }
+  
+  
+  /* Form CSS */
+  form{
+      margin-left: 30px;
+  }
+  
+  /* Footer CSS */
+  #footer-section{
+      position: fixed;
+      width: 100;
+      bottom: 0;
+      right: 50%;
+  }
+  

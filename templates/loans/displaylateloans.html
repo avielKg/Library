@@ -1,0 +1,35 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+
+<h1 class="pushLeft">Show all late loans</h1>
+<form action="/loans/displaylateloans" method="POST">
+
+    <label>Book id:</label>
+    <br>
+    <input name="bookid" type="number" placeholder="id" required autofocus>
+    <br><br>
+    <button type="submit">search for late loan by book id</button>
+</form>
+
+<div class="pushLeft">
+    <table>
+        <tr>
+            <th>customer ID</th>
+            <th>book ID</th>
+            <th>loan Date</th>
+        </tr>
+        {%for loan in loans%}
+        <tr>
+            <td>{{loan[0]}}</td>
+            <td>{{loan[1]}}</td>
+            <td>{{loan[2]}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+<div class="pushLeft">
+    {{dis}}
+</div>
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

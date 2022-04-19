@@ -1,0 +1,33 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+
+<h1 class="pushLeft">Add customer from here</h1>
+<form class="pushLeft" action="/customers/addCustomer" method="POST">
+    <label>Customer ID:</label>
+    <br>
+    <input type="number" name="ID" required autofocus>
+    <br><br>
+    <label>Customer Name:</label>
+    <br>
+    <input type="text" name="name" required autofocus>
+    <br><br>
+    <label>City:</label>
+    <br>
+    <input type="text" name="city" required>
+    <br><br>
+    <label>Age:</label>
+    <br>
+    <input type="number" min="1" name="age" required>
+    <br><br>
+    <button type="submit">Add Customer</button>
+</form>
+<div class="pushLeft">
+    {{msg}}
+</div>
+
+
+
+
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

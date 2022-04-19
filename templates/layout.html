@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href='/static/CSS/styles.css'>
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: rgb(245, 241, 241);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+        </style>
+  </head>
+   <body style="background-image: url('/static/images/image1.jpg');"> 
+  <body>
+    <style>
+      
+        a:link {
+          color: white;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:visited {
+          color: white;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:hover {
+          color: white;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        a:active {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+    </style>
+    <ul>
+      
+        <!-- <li><a class="active" href="#home">Home</a></li> -->
+        <li><a href="/home">HomePage</a></li>
+        <li><a href="/books">Books</a></li>
+        <li><a href="/customers">Library Customers</a></li>
+        <li><a href="/loans">Loans</a></li>
+      </ul>
+
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+      {% block footer %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> 
+    <br>
+      &copy; Copyright 2022 by avielkogan 
+      {% endblock %}
+    </div>
+    <footer>
+        <p>Author: Aviel Kogan</p>
+        <p><a href="mailto:hege@example.com">Aviel.Kogan@gmail.com</a></p>
+      </footer>
+ 
+  </body>
+</html>

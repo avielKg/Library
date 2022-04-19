@@ -1,0 +1,26 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+
+<h1 class="pushLeft">Show all customers from here</h1>
+<div class="pushLeft">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Age</th>
+        </tr>
+    {%for customer in customers%}
+    <tr>
+        <td>{{customer[0]}}</td>
+        <td>{{customer[1]}}</td>
+        <td>{{customer[2]}}</td>
+        <td>{{customer[3]}}</td>
+    </tr>
+    {%endfor%}
+    </table>
+</div>
+
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

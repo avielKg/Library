@@ -1,0 +1,14 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+<div class="indexNav">
+    <h1 class="pushLeft">Welcome to the customers section</h1>
+    <br><br>
+    <p class="pushLeft">Click Below to choose what you want to do :</p>  
+    <a class="pushLeft" href="/customers/addCustomer">Add customer to library</a><br><br>
+    <a class="pushLeft" href="/customers/findCustomer">Search for customer</a><br><br>
+    <a class="pushLeft" href="/customers/removeCustomer">Remove customer from library</a><br><br>
+    <a class="pushLeft" href="/customers/displayAllCustomers">Show all customers in the library</a><br><br>
+</div>
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

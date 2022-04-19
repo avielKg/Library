@@ -1,0 +1,14 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+<div class="indexNav">
+    <h1 class="pushLeft">Welcome to the loans section</h1>
+    <br><br>
+    <p class="pushLeft">Click Below to choose what you want to do :</p>  
+    <a class="pushLeft" href="/loans/loanabook">Loan a book</a><br><br>
+    <a class="pushLeft" href="/loans/returnabook">Return a loaned book</a><br><br>
+    <a class="pushLeft" href="/loans/displaylateloans">Show all late loans</a><br><br>
+    <a class="pushLeft" href="/loans/displayallloans">Show all loans from library</a><br><br>
+</div>
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

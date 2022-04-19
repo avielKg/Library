@@ -1,0 +1,16 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+
+<h1 class="pushLeft">return a book to the library</h1>
+
+<form action="/loans/returnabook" method="POST">
+
+    <label>Book id:</label>
+    <br>
+    <input name="bookid" type="text" placeholder="id" required autofocus>
+    <br><br>
+    <button type="submit">return book</button>
+</form>
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

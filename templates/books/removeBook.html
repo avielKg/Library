@@ -1,0 +1,26 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+
+<h1 class="pushLeft">You can remove a book from here</h1>
+<div class="pushLeft">
+    <form action="/books/removeBook" method="POST">
+        <label>Book id:</label>
+        <br>
+        <input type="text" name="ID" required autofocus>
+        <br><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Remove</button>
+    </form>
+</div>
+<br><br>
+<div class="pushLeft">
+    {{bRem}}&nbsp;<a href="/books/showAllBooks">{{goToBookDatabase}}</a> {{goBack}}
+</div>
+<div class="pushLeft">
+    {{msg}}
+</div>
+
+
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}
